@@ -38,8 +38,8 @@
     git commit --amend -m "Add index.html"
 
 12. Fusionner la branche main avec la branche api.
-    git rebase api
-    Le rebase est une opération qui permet de déplacer les commits d'une branche sur une autre. 
+    git merge api OU git rebase api
+    Le rebase est une opération qui permet de déplacer les commits d'une branche sur une autre.
     Cela permet de garder un historique linéaire.
 
 13. Retournez sur la branche api et modifiez le h1.

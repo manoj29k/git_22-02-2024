@@ -29,5 +29,3 @@ Exercice Commit
 
 10. Corriger le dernier commit pour le mettre à jour avec les dernières modifications.
     git commit --amend -m "Mise en place du portfolio avec style.css"
-
-
