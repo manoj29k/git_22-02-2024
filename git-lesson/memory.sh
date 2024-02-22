@@ -6,7 +6,6 @@
 #           CONFIGURATION       #
 # ----------------------------- #
 
-
 # Affiche la version de Git installée sur le système (plusieurs possibilités).
 git version | git -v
 
@@ -83,7 +82,7 @@ git branch -d nom_branche
 
 
 # ----------------------------- #
-#           RESTORES            #
+#           RESTORE             #
 # ----------------------------- #
 
 # Restaure le fichier à l'état du dernier commit.
@@ -94,3 +93,21 @@ git restore --staged nom_fichier
 
 #Créé un nouveau commit à partir du commit spécifié
 git revert id_commit
+
+
+# ----------------------------- #
+#           REMOTE              #
+# ----------------------------- #
+
+# Etablir une connexion avec un dépôt distant en lui attribuant un nom et une URL.
+git remote add alias url
+
+# En liant la branche locale avec la branche distante
+# Envoie le contenu du dépôt local vers le dépôt distant
+git push -u alias nom_branche
+
+# Envoie le contenu du dépôt local vers le dépôt distant.
+git push
+
+# Récupère tout l'historique du dépôt distant et incorpore les modification.
+git pull

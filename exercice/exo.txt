@@ -1,21 +1,33 @@
 Exercice Commit
 
 1. Créer un dossier 'portfolio' sur votre ordinateur
+    mkdir portfolio
+    cd portfolio
 
 2. Créer un fichier 'index.html' dans ce dossier, avec un titre 'Bienvenue sur mon Portfolio'
+    <h1>Bienvenue sur mon Portfolio</h1>
 
 3. Initialisez un dépôt avec Git dans ce dossier.
+    git init
 
 4. Vérifiez le statut du dépôt avec la commande correspondante.
+    git status
 
 5. Ajoutez les changements dans la zone de transit (staging area).
+    git add index.html
 
 6. Créez un commit avec la commande nécessaire, et ajoutez-y le message "Mise en place du portfolio".
+    git commit -m "Mise en place du portfolio"
 
 7. Regardez l'historique de vos commits avec la commande correspondante.
+    git log
 
 8. Créez un fichier 'style.css' dans le dossier 'portfolio'.
 
 9. Ajoutez ce fichier dans la zone de transit.
+    git add style.css
 
 10. Corriger le dernier commit pour le mettre à jour avec les dernières modifications.
+    git commit --amend -m "Mise en place du portfolio avec style.css"
+
+
